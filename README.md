@@ -119,6 +119,18 @@ export OPENAI_API_KEY="your-api-key-here"
 python benchmark/run_benchmark.py --mode llm --model gpt-4o-mini
 ```
 
+### 4. Launch Interactive Web Dashboard (Streamlit)
+
+Inspect full trajectories, view step-by-step thoughts and tool invocations, or test live prompts via the web dashboard:
+
+```bash
+# Launch Streamlit Studio
+make ui
+
+# Or directly:
+streamlit run app.py
+```
+
 ---
 
 ## 🖥️ Terminal Dashboard & Reporting
@@ -181,6 +193,7 @@ agent-evaluation-framework/
 │   ├── test_agent.py             # Unit tests for agent execution and tools
 │   ├── test_benchmark.py         # End-to-end benchmark pipeline tests
 │   └── test_evaluators.py        # Unit tests for all individual metrics
+├── app.py                        # Interactive Streamlit Web Studio
 ├── .env.example
 ├── .gitignore
 ├── LICENSE
